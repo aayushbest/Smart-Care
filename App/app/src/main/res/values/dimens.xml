@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="left_margin_label">40dp</dimen>
+    <dimen name="label_top_margin">10dp</dimen>
+    <dimen name="label_font_size">20sp</dimen>
+    <dimen name="provider_left_margin">30dp</dimen>
+</resources>

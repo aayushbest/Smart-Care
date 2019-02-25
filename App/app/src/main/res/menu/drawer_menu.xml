@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single">
+    <item android:id="@+id/menu_customer_account"
+        android:title="@string/menu_user_account"
+        android:icon="@drawable/ic_user_account_black_24dp"/>
+    <item android:id="@+id/menu_payment_history"
+        android:title="@string/menu_payment_history"
+        android:icon="@drawable/ic_payment_history_black_24dp"/>
+    <item android:id="@+id/menu_wallet"
+        android:icon="@drawable/ic_balance_wallet_black_24dp"
+        android:title="@string/menu_my_wallet"
+        />
+    <item android:id="@+id/menu_favourite"
+        android:icon="@drawable/ic_favorite_black_24dp"
+        android:title="@string/menu_favourite"/>
+    <item android:id="@+id/menu_help"
+        android:title="Help"
+        android:icon="@drawable/ic_help_black_24dp"/>
+    <item android:id="@+id/logout"
+        android:title="@string/customer_nav_sign_out"
+        android:onClick="signOutCustomer"
+        android:icon="@drawable/ic_logout_black_24dp"
+        app:showAsAction="always"/>
+</group>
+
+</menu>

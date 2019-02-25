@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/sih_logo"
+        android:maxHeight="200dp"
+        android:maxWidth="100dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/secondary"
+        android:fontFamily="serif"
+        android:id="@+id/text_join"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="@string/text_join"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/role_radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/text_join">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_customer"
+            android:id="@+id/radio_customer"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_provider"
+            android:id="@+id/radio_provider"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+    </RadioGroup>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/role_radioGroup"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:id="@+id/join"
+        android:textColor="@android:color/white"
+        android:onClick="joinService"
+        android:color="@color/join_button_state"
+        android:fontFamily="@string/text_join"
+        android:text="@string/button_join"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_login"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_below="@id/join"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:onClick="loginService"/>
+</RelativeLayout>

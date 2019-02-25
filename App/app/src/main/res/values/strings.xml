@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Smart Care</string>
+    <string name="text_join">Join as</string>
+    <string name="text_customer">Customer</string>
+    <string name="text_provider">Service Provider</string>
+    <string name="button_join">Join</string>
+    <string name="text_login">Already Joined? Login Now</string>
+    <string name="login_page_text">Login</string>
+    <string name="message_role_selection">Role Selection Error</string>
+    <string name="message_text">Please select a role to join!</string>
+    <string name="login_page_role_text">Role:</string>
+    <string name="email_hint">myname@exmaple.com</string>
+    <string name="text_email">E-mail:</string>
+    <string name="label_password">Password:</string>
+    <string name="hint_password">Password</string>
+    <string name="text_login_button">LOGIN</string>
+    <string name="text_provider_registration">User Registration</string>
+    <string name="text_name">Name:</string>
+    <string name="text_name_hint">e.g.John David</string>
+    <string name="text_email_hint">myname@example.com</string>
+    <string name="label_mobile">Mobile:</string>
+    <string name="electronics">Electronics</string>
+    <string name="mechanic">Mechanical</string>
+    <string name="plumber">Plumbing</string>
+    <string name="carpenter">Carpentary</string>
+    <string name="computer">Computers</string>
+    <string name="image_content">Smart India Hackathon 2019 logo</string>
+    <string name="mobile_number_hint">e.g.9302341234</string>
+    <string name="text_aadhar">Aadhar:</string>
+    <string name="text_password">Password:</string>
+    <string name="text_role">Role:</string>
+    <string name="label_role">Role</string>
+    <string name="menu_user_account">My Account</string>
+    <string name="menu_payment_history">Payment History</string>
+    <string name="menu_my_wallet">My Wallet</string>
+    <string name="menu_favourite">Favourite</string>
+    <string name="button_logout">Log Out</string>
+    <string name="customer_nav_sign_out">Sign Out</string>
+    <string name="content_actionbar_toolbar">ActionBar Toolbar</string>
+    <string name="customer_fullname">Full Name</string>
+    <string name="add_profile_pic_text">Add your Profile Picture</string>
+    <string name="text_button_upload">Upload</string>
+    <string-array name="roles_array">
+        <item name="customer">Customer</item>
+        <item name="service_provider">Service Provider</item>
+    </string-array>
+</resources>
