@@ -10,6 +10,9 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:context=".CustomerDashboard">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <FrameLayout
         android:layout_width="match_parent"
         android:id="@+id/frame_layout"
@@ -21,22 +24,14 @@
             android:background="@color/colorPrimary"
             android:contentDescription="@string/content_actionbar_toolbar"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
-    <FrameLayout
+         <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:layout_marginTop="100dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
         android:id="@+id/fragment_container"/>
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/second_fragment_container"
-        android:layout_marginTop="120dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginStart="10dp"/>
     </FrameLayout>
+    </android.support.v4.widget.NestedScrollView>
     <!--Used for showing the navigation drawer-->
 
     <android.support.design.widget.NavigationView
