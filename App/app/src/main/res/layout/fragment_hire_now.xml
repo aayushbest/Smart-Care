@@ -1,6 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-</android.support.constraint.ConstraintLayout>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/shape_background_gradient"
+    android:layout_height="250dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_hire_now"
+        android:text="@string/text_hire_now"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/textview_style"
+        android:layout_marginTop="10dp"/>
+<GridLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_below="@id/label_hire_now"
+    android:rowCount="2"
+    android:columnCount="2">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_electrian"
+        android:id="@+id/service_electrician"
+        android:textSize="30sp"
+        android:layout_rowSpan="1"
+        android:layout_columnSpan="1"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/shadow"
+        android:textStyle="bold"
+        android:background="@drawable/style_services_textview"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_computer_expert"
+        android:id="@+id/service_computerExpert"
+        android:textSize="30sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_rowSpan="2"
+        android:layout_columnSpan="1"
+        android:padding="10dp"
+        android:ems="5"
+        android:textAlignment="center"
+        android:textColor="@color/shadow"
+        android:textStyle="bold"
+        android:background="@drawable/style_services_textview"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_plumber"
+        android:id="@+id/service_plumber"
+        android:textSize="30sp"
+        android:layout_rowSpan="1"
+        android:layout_columnSpan="1"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:ems="5"
+        android:textAlignment="center"
+        android:textColor="@color/shadow"
+        android:textStyle="bold"
+        android:background="@drawable/style_services_textview"/>
+</GridLayout>
+</RelativeLayout>

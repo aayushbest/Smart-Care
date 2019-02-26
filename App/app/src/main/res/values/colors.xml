@@ -7,4 +7,7 @@
     <color name="shadow">#FFF68F</color>
     <color name="colorJoinButton">#A012EC</color>
     <color name="colorCream">#DCEDB4</color>
+    <color name="colorCentral">#1AE199</color>
+    <color name="colorEnd">#177A56</color>
+    <color name="colorStart">#5CEDB8</color>
 </resources>

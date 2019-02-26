@@ -49,11 +49,12 @@ public class CustomerDashboard extends AppCompatActivity {
             }
         });
         Fragment profileFragment=new ProfilePictureFragment();
+        Fragment serviceFragment=new ServicesFragment();
         FragmentManager fm=getSupportFragmentManager();
         FragmentTransaction fragmentTransaction=fm.beginTransaction();
         fragmentTransaction.add(R.id.fragment_container,profileFragment);
+        fragmentTransaction.add(R.id.second_fragment_container,serviceFragment);
         fragmentTransaction.commit();
-
     }
 
     @Override

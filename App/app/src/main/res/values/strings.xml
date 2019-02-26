@@ -40,6 +40,10 @@
     <string name="customer_fullname">Full Name</string>
     <string name="add_profile_pic_text">Add your Profile Picture</string>
     <string name="text_button_upload">Upload</string>
+    <string name="text_hire_now">Hire Now</string>
+    <string name="text_electrian">Electrician</string>
+    <string name="text_computer_expert">Computer Expert</string>
+    <string name="text_plumber">Plumber</string>
     <string-array name="roles_array">
         <item name="customer">Customer</item>
         <item name="service_provider">Service Provider</item>
