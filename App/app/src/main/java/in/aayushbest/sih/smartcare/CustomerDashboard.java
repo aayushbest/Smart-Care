@@ -15,12 +15,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.view.animation.AnimationUtils;
 
 public class CustomerDashboard extends AppCompatActivity {
 
     private static final String TAG =CustomerDashboard.class.getSimpleName() ;
     private DrawerLayout mDrawerLayout;
     private BottomNavigationView mBottomNavigationView;
+    private FragmentTransaction mFragmentTransaction;
+    private FragmentManager mManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,16 +49,16 @@ public class CustomerDashboard extends AppCompatActivity {
             }
         });
         Fragment serviceFragment=new HireNowFragment();
-        FragmentManager fm=getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction=fm.beginTransaction();
-        fragmentTransaction.add(R.id.fragment_container,serviceFragment);
-        fragmentTransaction.commit();
+        mManager=getSupportFragmentManager();
+        mFragmentTransaction=mManager.beginTransaction();
+        mFragmentTransaction.add(R.id.fragment_container,serviceFragment);
+        mFragmentTransaction.commit();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-
+    mBottomNavigationView.setVisibility(View.VISIBLE);
     }
 
     @Override
@@ -76,5 +79,13 @@ public class CustomerDashboard extends AppCompatActivity {
         intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
         startActivity(intent);
 
+    }
+
+    public void goToMyAccount(MenuItem item) {
+        Fragment myFragment=new MyAccountFragment();
+        mFragmentTransaction=mManager.beginTransaction();
+        mFragmentTransaction.replace(R.id.fragment_container,myFragment);
+        mFragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+        mFragmentTransaction.commit();
     }
 }

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/shape_background_service"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="250dp">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -12,5 +13,52 @@
         android:textStyle="bold"
         android:textSize="20sp"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/shape_services"/>
+        />
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/label_get_services"
+        android:rowCount="3"
+        android:columnCount="1">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button_services"
+            android:text="@string/text_washing_machine"
+            android:textStyle="bold"
+            android:id="@+id/service_washing_machine"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:textSize="20sp"/>
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button_services"
+            android:text="@string/text_computer_service"
+            android:id="@+id/service_computer"
+            android:layout_marginTop="@dimen/services_button_margin_top"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:textSize="20sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/service_air_conditioner"
+            android:text="@string/text_air_conditioner"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_button_services"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"/>
+
+    </GridLayout>
 </RelativeLayout>

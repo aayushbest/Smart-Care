@@ -4,6 +4,7 @@
 <group android:checkableBehavior="single">
     <item android:id="@+id/menu_customer_account"
         android:title="@string/menu_user_account"
+        android:onClick="goToMyAccount"
         android:icon="@drawable/ic_user_account_black_24dp"/>
     <item android:id="@+id/menu_payment_history"
         android:title="@string/menu_payment_history"

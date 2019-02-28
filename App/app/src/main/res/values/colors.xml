@@ -7,7 +7,11 @@
     <color name="shadow">#FFF68F</color>
     <color name="colorJoinButton">#A012EC</color>
     <color name="colorCream">#DCEDB4</color>
-    <color name="colorCentral">#1AE199</color>
-    <color name="colorEnd">#177A56</color>
-    <color name="colorStart">#5CEDB8</color>
+    <color name="colorGreen">#1AE199</color>
+    <color name="colorDarkGreen">#177A56</color>
+    <color name="colorLightGreen">#5CEDB8</color>
+    <color name="colorYellow">#C8F10F</color>
+    <color name="colorGrey">#808080</color>
+    <color name="colorLightBlack">#330000</color>
+    <color name="colorRoyalBlue">#4169E1</color>
 </resources>
