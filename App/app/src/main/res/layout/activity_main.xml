@@ -64,7 +64,7 @@
         android:id="@+id/join"
         android:textColor="@android:color/white"
         android:onClick="joinService"
-        android:color="@color/join_button_state"
+        android:color="@drawable/join_button_state"
         android:fontFamily="@string/text_join"
         android:text="@string/button_join"
         android:textStyle="bold" />

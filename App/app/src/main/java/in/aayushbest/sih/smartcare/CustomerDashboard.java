@@ -12,10 +12,14 @@ import android.support.v4.widget.DrawerLayout;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.MenuItem;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.animation.AnimationUtils;
+import android.widget.FrameLayout;
+
+import java.util.List;
 
 public class CustomerDashboard extends AppCompatActivity {
 
@@ -24,12 +28,16 @@ public class CustomerDashboard extends AppCompatActivity {
     private BottomNavigationView mBottomNavigationView;
     private FragmentTransaction mFragmentTransaction;
     private FragmentManager mManager;
+    private Fragment mServiceFragment;
+    private Fragment mAccountFragment;
+    private FrameLayout mContainer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customer_dashboard);
         Toolbar toolbar=findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        mContainer=findViewById(R.id.fragment_container);
         ActionBar action=getSupportActionBar();
         action.setHomeAsUpIndicator(R.drawable.ic_menu_black_24dp);
         action.setDisplayHomeAsUpEnabled(true);
@@ -48,10 +56,10 @@ public class CustomerDashboard extends AppCompatActivity {
                 return true;
             }
         });
-        Fragment serviceFragment=new HireNowFragment();
+        mServiceFragment=new HireNowFragment();
         mManager=getSupportFragmentManager();
         mFragmentTransaction=mManager.beginTransaction();
-        mFragmentTransaction.add(R.id.fragment_container,serviceFragment);
+        mFragmentTransaction.add(R.id.fragment_container,mServiceFragment);
         mFragmentTransaction.commit();
     }
 
@@ -82,10 +90,16 @@ public class CustomerDashboard extends AppCompatActivity {
     }
 
     public void goToMyAccount(MenuItem item) {
-        Fragment myFragment=new MyAccountFragment();
+        mManager=getSupportFragmentManager();
         mFragmentTransaction=mManager.beginTransaction();
-        mFragmentTransaction.replace(R.id.fragment_container,myFragment);
-        mFragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+        Log.d(TAG,"Fragment Removal!");
+        Fragment accountFragment=new MyAccountFragment();
+        mFragmentTransaction.replace(R.id.fragment_container,accountFragment);
+        mFragmentTransaction.addToBackStack(null);
+        Log.d(TAG,"My Accounts Fragments added to container");
         mFragmentTransaction.commit();
+        mDrawerLayout.closeDrawers();
+        mBottomNavigationView.setVisibility(View.VISIBLE);
+
     }
 }

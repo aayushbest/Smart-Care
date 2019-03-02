@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/style_services_textview"
+    android:layout_centerHorizontal="true">
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/sih_logo"
+        android:id="@+id/imageHireNow"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameHireNow"
+        android:textStyle="bold"
+        android:text="@string/text_hire_now"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@android:color/holo_blue_light"/>
+
+</LinearLayout>

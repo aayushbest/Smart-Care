@@ -61,4 +61,20 @@
     <string name="text_upi_details">Change UPI Details</string>
     <string name="text_language">Change Langauge</string>
     <string name="label_change_password">Change Password</string>
+    <string name="text_symbol_name">Symbol Name</string>
+    <!--TODO:Hire Now Fragment-->
+    <string-array name="hireNow_array">
+        <item name="software_engg">Software Engineer</item>
+        <item name="electrician">Electrician</item>
+        <item name="physilogist">Physiologist</item>
+        <item name="audio">AudioLogist</item>
+        <item name="physical_therapist">Physical Therapist</item>
+        <item name="security_analyst">Information System Analyst</item>
+        <item name="data_admin">Data Administrator</item>
+        <item name="design_engg">Design Engineer</item>
+        <item name="automation">Automation Engineer</item>
+        <item name="finance_planner">Finance Planeer</item>
+        <item name="project_manager">Project Manager</item>
+        <item name="freelancer">Freelancer Consultant</item>
+    </string-array>
 </resources>

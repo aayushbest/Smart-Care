@@ -112,6 +112,6 @@
         android:layout_below="@id/password"
         android:textStyle="bold"
         android:onClick="loginDashboard"
-        android:textColor="@color/join_button_state"
+        android:textColor="@android:color/holo_blue_light"
         android:layout_marginTop="@dimen/label_top_margin"/>
 </RelativeLayout>
